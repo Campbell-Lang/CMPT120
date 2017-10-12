@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>GameShop | Place an Order</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="game_shoppe.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #000000}
+.style4 {font-size: 10}
+-->
+</style>
+<script>
+
+//idea: self populating table after several prompts (with questions) for the user. 
+//Table will populate with answers/ images
+
+function getConsole()
+{
+	var cost = 0;
+	var totalCost = 0;
+	var console = prompt("What console would you like? Xbox One or PS4? If you are not looking for a console, type 'next'. ");
+	
+	switch (console.toLowerCase())
+	{
+		case "xbox one":
+		cost = 299;
+		document.getElementById("picture").innerHTML = ("<img src='images/xbox.jpg' />");
+		document.getElementById("cost").innerHTML = ("$" + cost);
+		document.getElementById("xbox").innerHTML = ("Xbox One");
+		break;
+		
+		case "ps4":
+		cost = 399;
+		document.getElementById("picture1").innerHTML = ("<img src='images/ps4.jpg' />");
+		document.getElementById("cost1").innerHTML = ("$" + cost);
+		document.getElementById("ps4").innerHTML = ("Play Station 4");
+		break;
+		
+		case "next":
+		break;
+		
+		default:
+		alert("Invalid response. Please try again.");
+	}
+}
+
+function getGame()
+{
+	var cost = 0;
+	var totalCost = 0;
+	var games = prompt("Which Genre of game are you looking for? 'Action', 'Adventure', 'Puzzle', or 'FPS'?");
+	
+	switch (games.toLowerCase())
+	{
+		case "fps":
+		cost = 19;
+		document.getElementById("picture3").innerHTML = ("<img src='images/csgo.png' />");
+		document.getElementById("cost2").innerHTML = ("$" + cost);
+		document.getElementById("csgo").innerHTML = ("Counter Strike: Global Offensive");
+		break;
+		
+		case "action":
+		cost = 59;
+		document.getElementById("picture4").innerHTML = ("<img src='images/crysis.jpg' />");
+		document.getElementById("cost3").innerHTML = ("$" + cost);
+		document.getElementById("crysis").innerHTML = ("Crysis 3");
+		break;
+		
+		case "adventure":
+		cost = 19;
+		document.getElementById("picture5").innerHTML = ("<img src='images/walkingdead.jpg' />");
+		document.getElementById("cost4").innerHTML = ("$" + cost);
+		document.getElementById("walkingdead").innerHTML = ("The Walking Dead: A Telltale game series");
+		break;
+		
+		case "puzzle":
+		cost = 9;
+		document.getElementById("picture6").innerHTML = ("<img src='images/peggle.jpg' />");
+		document.getElementById("cost5").innerHTML = ("$" + cost);
+		document.getElementById("peggle").innerHTML = ("Peggle 2");
+		break;
+		
+		case "next":
+		break;
+		
+		default:
+		alert("Invalid response. Please try again.");
+	}
+}
+
+function getAccessory()
+{
+	var cost = 0;
+	var totalCost = 0;
+	var accessory = prompt("Which accessory would you like? 'Xbox controller', 'PS4 controller', or 'Extra Hardrive'?");
+	
+switch (accessory.toLowerCase())
+	{
+	case "xbox controller":
+		cost = 49;
+		document.getElementById("picture7").innerHTML = ("<img src='images/controller.jpg' />");
+		document.getElementById("cost6").innerHTML = ("$" + cost);
+		document.getElementById("controller").innerHTML = ("Xbox One Controller");
+		break;
+		
+		case "ps4 controller":
+		cost = 49;
+		document.getElementById("picture8").innerHTML = ("<img src='images/controller1.png' />");
+		document.getElementById("cost7").innerHTML = ("$" + cost);
+		document.getElementById("controller1").innerHTML = ("PS4 Controller");
+		break;
+		
+		case "extra harddrive":
+		cost = 79;
+		document.getElementById("picture9").innerHTML = ("<img src='images/harddrive.jpg' />");
+		document.getElementById("cost8").innerHTML = ("$" + cost);
+		document.getElementById("harddrive").innerHTML = ("External Hardrive");
+		break;
+	}
+}
+
+</script>
+</head>
+<body>
+<div id="container">
+
+ 
+ <h1 id="logo"><em>&nbsp;&nbsp;&nbsp;&nbsp;
+ <img src="images/logo.png"/> | Place an Order</em></h1>
+  
+ <blockquote>
+       <h3 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   Your place to suit all your gaming needs </h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/order.html">Place an Order</a>
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/feedback.html">Customer Feedback</a>
+</div>
+<div id="content">
+<table width="90%"  border="0" cellpadding="5">
+  <tr>
+    <td width="10%">&nbsp;Console</td>
+	<td width="10%">&nbsp;<span id="xbox"/> <span id="ps4"/> </td>
+    <td width="10%">&nbsp;<span id="cost"/> <span id="cost1"/> </td> <!-- this is where the id's of from the function would go to populate the table !-->
+	<td width="10%">&nbsp;<span id="picture"/> <span id="picture1"/>  </td>
+  </tr>
+  <tr>
+    <td width="10%">&nbsp;Game</td>
+	<td width="10%"><span id="csgo"/> <span id="crysis"/> <span id="walkingdead"/> <span id="peggle"/> </td>
+    <td width="10%">&nbsp;<span id="cost2"/> <span id="cost3"/> <span id="cost4"/> <span id="cost5"/> </td>
+	<td width="10%">&nbsp;<span id="picture3"/> <span id="picture4"/> <span id="picture5"/> <span id="picture6"/> </td>
+  </tr>
+  <tr>
+    <td width="10%">&nbsp;Accessories</td>
+    <td width="10%">&nbsp;<span id="controller"/> <span id="controller1"/> <span id="harddrive"/> </td>
+	<td width="10%">&nbsp;<span id="cost6"/> <span id="cost7"/> <span id="cost8"/> </td>
+	<td width="10%">&nbsp;<span id="picture7"/> <span id="picture8"/> <span id="picture9"/> </td>
+  </tr>
+</table>
+
+<p><button type="button" onclick="getConsole()">Click here to order a console:</button>
+
+<p><button type="button" onclick="getGame()">Click here to order a game:</button>
+
+<p><button type="button" onclick="getAccessory()">Click here to order an accessory:</button>
+
+</div>
+<div id="footer">GameShop est. 2016<br />
+Have questions or concerns? Don't see an item you need? Email: <a href="mailto:Campbell@Lang.com">Campbell@Lang.com</a><br />
+Dallas,TX 75225</div>
+</div>
+</body>
+</html>
