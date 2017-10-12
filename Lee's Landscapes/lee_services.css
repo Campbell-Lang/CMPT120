@@ -1,0 +1,52 @@
+background
+{
+	
+}
+
+head
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #006400;
+	font-size: 32px;
+	display: block;
+}
+
+tag
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #006400;
+	font-size: 18px;
+	display: block;
+}
+
+lee
+{
+	margin: 5%;
+	padding: 5%;
+	display: block;
+	background-color: black;
+}
+
+service
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #5CB3FF;
+	font-size: 28px;
+	display: block;
+}
+
+frequency
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+	font-size: 20px;
+	display: block;	
+}
+
+cost
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: white;
+	font-size: 20px;
+	display: block;
+}

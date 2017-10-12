@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lee's Landscapes | Lee's Customers</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="./Lee&apos;s Landscapes_files/lee.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #004000}
+.style4 {font-size: 10}
+-->
+</style>
+<script type="text/javascript" src="leeCustomers.js"></script>
+<script>
+
+function sortList()
+{
+	var flag = 0; var temp = 0;
+	
+	while (flag == 0)
+	{
+		flag = 1;
+			for (k = 0; k <= (custName.length -2); k++)
+			{
+				if (custName[k] < custName[k + 1])
+				{
+					temp = custName[k];
+					custName[k] = custName[k + 1];
+					custName[k + 1] = temp;
+					
+					temp = mnthCharge[k];
+					mnthCharge[k] = mnthCharge[k + 1]
+					mnthCharge[k + 1] = temp;
+					
+					temp = pastDueAmt[k];
+					pastDueAmt[k] = pastDueAmt[k + 1];
+					pastDueAmt[k +1] = temp;
+					
+					temp = dayPastDue[k];
+					dayPastDue[k] = dayPastDue[k + 1];
+					dayPastDue[k +1] = temp;
+					
+					flag = 0;
+				}
+			}
+	}
+	document.getElementById("demo").innerHTML = custName;
+	document.getElementById("demo1").innerHTML = mnthCharge;
+	document.getElementById("demo2").innerHTML = pastDueAmt;
+	document.getElementById("demo3").innerHTML = dayPastDue;
+}
+
+</script>
+</head>
+<body>
+<div id="container">
+
+ <img src="./Lee&apos;s Landscapes_files/lee_landscape.jpg" class="floatleft" />
+ <h1 id="logo"><em>Lee's Landscapes | Customer Overview</em></h1>
+  
+ <blockquote>
+       <h3 align="center"> Beautifying our world, one step at a time</h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_aboutuser.html">About Lee</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_signup.html">Signup</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_service.html">Lee's Services</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_payroll.html">Lee's Payroll</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tools.html">Gardening tools</a>
+   <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tips.html">Tips &amp; tricks</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/contact.html">Contact us</a>
+</div>
+<div id="content">
+
+		<p><input type="button" value = "organize" onclick = "sortList();" /></p>
+		
+		
+<p id="demo">Names</p>
+<p id="demo1">Monthly Charge</p>
+<p id="demo2">Amount Due</p>
+<p id="demo3">Days Past Due</p>
+
+</div>
+<div id="footer">Copyright © 2016 Lee's Landscapes<br />
+<a href="mailto:Campbell@Lang.com" class="style2">Campbell@Lang.com</a></div>
+</div>
+</body>
+</html>
