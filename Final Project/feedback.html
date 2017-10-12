@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>GameShop | Customer Feedback</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="game_shoppe.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #000000}
+.style4 {font-size: 10}
+-->
+</style>
+<script>
+
+function sendData() <!-- this function will allow the customer to confirm whether or not to send their complaint to the company !-->
+{
+	var response = prompt("You clicked: Send Entry.  This will send your data to customer service.  Do you want to do this? Type 'yes' to send or anything else to cancel.");
+	
+	if (response == "yes")
+	{
+		alert("We appreciate your feedback! This will help make the customer expereince better!");
+	}
+	else
+	{
+		alert("Your infomation did not send.");
+	}
+}
+
+</script>
+</head>
+<body>
+<div id="container">
+
+ 
+ <h1 id="logo"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="images/logo.png"/> | Customer Feedback</em></h1>
+  
+ <blockquote>
+       <h3 align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   Your place to suit all your gaming needs </h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/order.html">Place an Order</a>
+  <a href="file:///C:/Users/soupl/Desktop/Final%20Project/feedback.html">Customer Feedback</a>
+</div>
+<div id="content">
+<p>
+Please give us your feedback! We take customer satisfaction very serioulsy.  If there is anything that we need to change 
+do not hesitate to tell us.
+</p>
+<h3> Enter your information here: </h3>
+<form>
+<fieldset>
+<p><label>Your name: <br /> </label>
+<input type = "text" id="name" size = "40" value = ""/>
+</p>
+<p><label>Your email: <br /> </label>
+<input type = "text" id="email" size = "40" value = ""/>
+</p>
+<br />
+<p><label> Check all that apply: </label></p>
+<input type = "checkbox" name = "service" value = "Order Error"/>Order Error<br />
+<input type = "checkbox" name = "service" value = "Website Error"/>Website Error<br />
+<input type = "checkbox" name = "service" value = "Bad customer service experience"/>Bad customer service experience<br />
+<input type = "checkbox" name = "service" value = "None of the above"/>None of the above<br />
+Other: <input type = "text" id="other" size = "100" value = ""/>
+<br />
+<p><label> Have you ordered from us before? </label></p>
+<input type = "radio" name ="button" id="yes" value = "Yes"/>Yes</br />
+<input type = "radio" name ="button" id="no" value = "No"/>No</br />
+<br />
+<input type = "reset" value="Clear Entry."/>
+<br />
+<br />
+<input type = "button" value="Send Entry." onClick = "sendData();"  />
+</fieldset>
+</form>
+</div>
+<div id="footer">GameShop est. 2016<br />
+Have questions or concerns? Don't see an item you need? Email: <a href="mailto:Campbell@Lang.com">Campbell@Lang.com</a><br />
+Dallas,TX 75225</div>
+</div>
+</body>
+</html>
