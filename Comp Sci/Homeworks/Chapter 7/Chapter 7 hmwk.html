@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Greg's Gambits | Roll the Die</title>
+	<link href="greg.css" rel="stylesheet" type="text/css" />
+<script type = "text/javascript">
+
+function rollDice()
+{
+var playerPts = 0;		var compPts = 0;
+var playerPlay = 0;		var compPlay = 0;
+var user_total = 0;		var comp_total = 0;
+
+document.getElementById("playerPts").innerHTML = (playerPts);
+document.getElementById("compPts").innerHTML = (compPts);
+document.getElementById("playerRoll").innerHTML = ("Your Dice rolled: ");
+document.getElementById("compRoll").innerHTML = ("The Computer's Die rolled: ");
+
+
+
+
+		while ((playerPts < 100) && (compPts < 100))
+		{
+			var playerPrompt = prompt("Hit enter to begin the round.  Type 'n' to quit the game.");
+			if(playerPrompt == "n") 
+			break;
+			
+			var dice_1 = Math.floor(Math.random() * 6 + 1);
+			var dice_2 = Math.floor(Math.random() * 6 + 1);
+			var user_dice = Math.floor(Math.random() * 6 + 1);
+			var user_dice1 = Math.floor(Math.random() * 6 + 1);
+			
+			playerPlay = user_dice + user_dice1;
+			compPlay = dice_1 + dice_2;
+			
+			document.getElementById("playerRoll").innerHTML = ("Your Dice Rolled: " + playerPlay);
+			document.getElementById("compRoll").innerHTML = ("The Computer's Die Rolled: " + compPlay);
+			alert("The dice have been rolled...");
+			
+			if ((playerPlay > compPlay))
+			{
+				playerPts = playerPts + playerPlay;
+				compPts = compPts;
+				document.getElementById("playerPts").innerHTML = (playerPts);
+				document.getElementById("compPts").innerHTML = (compPts);
+			}
+			
+			if ((playerPlay < compPlay))
+			{
+				playerPts = playerPts;
+				compPts = compPts + compPlay;
+				document.getElementById("playerPts").innerHTML = (playerPts);
+				document.getElementById("compPts").innerHTML = (compPts);
+			}
+			
+			
+		}
+}
+</script>
+<style type="text/css">
+<!--
+.style1 {font-size: 18px}
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+ <h1 align="center"><em>Roll the Die</em></h1>
+
+<div style ="clear:both;"></div>  
+<div id="nav">
+  <p><a href="index.html">Home</a>
+  <a href="greg.html">About Greg</a>
+  <a href="play_games.html">Play a Game</a>
+  <a href="sign.html">Sign In</a>
+  <a href="contact.html">Contact Us</a></p>
+</div>
+<div id="content">
+  <table width = "85%" cellpadding="5" cellspacing="0" border = "0">
+  <tr><td colspan = 4><span class="style1">Click the button to compete with the computer!</span></td></tr>
+<tr><td width = 20%><p></p>
+<tr><td colspan = 4><span class="style1">Note: <br />
+  The winner is the one who rolls the highest number. <br />
+  Rolling the same number on both die will give you double points.<br />
+  The first one to 100 points is the victor!</span></td></tr>
+  <td><p> <span class="style1"><h3>Player 1</h3></span></p>
+  <p id = "playerRoll">Player Dice # goes here </p>
+  <p id = "playerPts">Player Score: </p></td>
+<td width=20%><p></p>
+  <td><p><span class="style1"><h3>Computer</h3></span></p>
+  <p id = "compRoll">Computer Dice # goes here </p>
+  <p id = "compPts">Computer Score: </p></td>
+<td width = 10%>&nbsp;</td>
+<td width = 50%> <span class="style1"><p></p>
+  <!-- display rules -->
+  &nbsp;</td></tr>
+
+</table>
+<input type="button" id="battle" value="Lets's Roll!" onclick="rollDice()"; />
+ </div>
+<div id="footer">Copyright &copy; 2016 Greg's Gambits<br />
+<a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+</div>
+</div>
+</body>
+</html>

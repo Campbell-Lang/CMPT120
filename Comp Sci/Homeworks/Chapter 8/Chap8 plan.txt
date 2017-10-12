@@ -1,0 +1,25 @@
+if (badSpots[1] == true & badSpots[4] == true)
+	badSpots[1] = true;
+	
+	
+function doClick(row, col)
+{
+	swapped = false;
+	
+	if (((Math.abs(col-lastCol))+(Math.abs(row-lastRow))) > 1)
+		alert("illegal move");
+		
+	if (roadBlocks[row][col]==true)
+		alert("Sorry, can't go that way.")
+		
+	if (row == 3 && col == 3)
+	{
+		alert("You won! You reached the pot of gold!")
+		var playAgain = prompt("Play again?");
+			if(playAgain.toLowerase() == "yes")
+			{
+				swap(cells[lastRow][lastCol], cells[0][0]);
+			setup();
+			}
+	}
+}
