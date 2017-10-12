@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lee's Landscapes | About You</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="./Lee&apos;s Landscapes_files/lee.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #004000}
+.style4 {font-size: 10}
+-->
+</style>
+<script>
+function getName()
+{
+	var name = prompt("Please enter your name"," ");
+	document.getElementById('myname').innerHTML = name;
+}
+
+function getLevel()
+{
+	var level = prompt("Please enter your level of gardening expertise: Novice, Intermediete, or Expert", " ")
+	document.getElementById('mylevel').innerHTML = level;
+}
+
+function getInterest()
+{
+	var interest = prompt("Please enter your gardening interst: Lawn Maintenance, Landscaping, Growing Vegetables, or Planting Flowers", " ")
+	document.getElementById('myinterest').innerHTML = interest;
+}
+
+function getComplete()
+{
+	var complete = prompt("Are you finished entering your information?", " ")
+	var finished = "Thank You!";
+	var finished1 = "For tips on you specific gardening interest, go to the 'Tips and Tricks' page!";
+	document.getElementById('mycomplete').innerHTML = finished + finished1;
+}
+</script>
+</head>
+<body>
+<div id="container">
+
+ <img src="./Lee&apos;s Landscapes_files/lee_landscape.jpg" class="floatleft" />
+ <h1 id="logo"><em>Lee's Landscapes | About You</em></h1>
+  
+ <blockquote>
+       <h3 align="center"> Beautifying our world, one step at a time</h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_aboutuser.html">About Lee</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_signup.html">Signup</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_service.html">Lee's Services</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tools.html">Gardening tools</a>
+   <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tips.html">Tips &amp; tricks</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/contact.html">Contact us</a>
+</div>
+<div id="content">
+
+		<p><button type="button" onclick="getName()">Enter your name:</button>
+		Hi there, <span id ="myname" ></span></p>
+		<p>&nbsp;</p>
+		
+		<p><button type="button" onclick="getLevel()">Enter your Level of expertise:</button>
+		Level: <span id = "mylevel"></span></p>
+		<p>&nbsp;</p>
+		
+		<p><button type="button" onclick="getInterest()">Enter your interest:</button>
+		Interest: <span id ="myinterest" ></span></p>
+		
+		<p><button type="button" onclick="getComplete()">Are you done? Click the Button!</button>
+		<span id ="mycomplete" ></span></p>
+
+</div>
+<div id="footer">Copyright © 2016 Lee's Landscapes<br />
+<a href="mailto:Campbell@Lang.com" class="style2">Campbell@Lang.com</a></div>
+</div>
+</body>
+</html>

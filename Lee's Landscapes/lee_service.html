@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lee's Landscapes | About You</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="./Lee&apos;s Landscapes_files/lee.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #004000}
+.style4 {font-size: 10}
+-->
+</style>
+<script>
+
+function getService()
+{
+	var cost = 0;
+	
+	var select = prompt("Which of the three services would you like?", " "); 
+	
+	switch (select.toLowerCase())
+	{
+		case "lawn maintenance":
+			var lawn = prompt("Weekly, Twice a month, or Monthly?", " ");
+			
+				switch (lawn.toLowerCase())
+				{
+					case "weekly":
+						cost = 15;
+						alert("Your cost is: " + cost);
+						break;
+					case "twice a month":
+						cost = 25;
+						alert("Your cost is: " + cost);
+						break;
+					case "monthly":
+						cost = 40;
+						alert("Your cost is: " + cost);
+						break;
+				}
+		break;
+				
+		case "pest control":
+			var pest = prompt("Monthly, Twice a Year, or Yearly?", " ");
+			
+				switch (pest.toLowerCase())
+				{
+					case "monthly":
+						cost = 35;
+						alert("Your cost is: " + cost);
+						break;
+					case "twice a year":
+						cost = 75;
+						alert("Your cost is: " + cost);
+						break;
+					case "yearly":
+						cost = 150;
+						alert("Your cost is: " + cost);
+						break;
+				}
+		break;			
+		
+		case "Tree and Hedge trimming":
+			var hedge = prompt("Monthly, Twice a Year, or Yearly?", " ");
+			
+				switch (hedge.toLowerCase())
+				{
+					case "monthly":
+						cost = 25;
+						alert("Your cost is: " + cost);
+						break;
+					case "twice a year":
+						cost = 75;
+						alert("Your cost is: " + cost);
+						break;
+					case "yearly":
+						cost = 150;
+						alert("Your cost is: " + cost);
+						break;
+				}
+		break;			
+		
+		default: 
+			alert("Inavlid service, plaese re-enter." );
+	
+	}
+	
+
+}
+
+function getOrder()
+{
+	var service = " ";
+	var cost = 0;
+	var totalCost = 0;
+	var budget = parseInt(0);
+	
+	var budget = prompt("What is your budget for your order?", " ");
+	
+		if ((budget < 0))
+		{
+			alert("Sorry, invalid budget. Please try again.");
+		}
+	while (budget != "done" && budget >= totalCost)
+	{
+	var service = prompt("Which of the three services would you like? (or type 'done' if you are finished shopping)", " "); 
+	
+	switch (service.toLowerCase())
+	{
+		case "lawn maintenance":
+			var lawn = prompt("Weekly, Twice a month, or Monthly?", " ");
+			
+				switch (lawn.toLowerCase())
+				{
+					case "weekly":
+						cost = 15;
+						break;
+					case "twice a month":
+						cost = 25;
+						break;
+					case "monthly":
+						cost = 40;
+						break;
+				default:alert("You might have typed something wrong, plaese re-enter." );
+				}
+		break;
+				
+		case "pest control":
+			var pest = prompt("Monthly, Twice a Year, or Yearly?", " ");
+			
+				switch (pest.toLowerCase())
+				{
+					case "monthly":
+						cost = 35;
+						break;
+					case "twice a year":
+						cost = 75;
+						break;
+					case "yearly":
+						cost = 150;
+						break;
+				default:alert("You might have typed something wrong, plaese re-enter." );
+				}
+		break;			
+		
+		case "Tree and Hedge trimming":
+			var hedge = prompt("Monthly, Twice a Year, or Yearly?", " ");
+			
+				switch (hedge.toLowerCase())
+				{
+					case "monthly":
+						cost = 25;
+						break;
+					case "twice a year":
+						cost = 75;
+						break;
+					case "yearly":
+						cost = 150;
+						break;
+				default:alert("You might have typed something wrong, plaese re-enter." );
+				}
+		break;	
+		
+		case "done":
+			alert("Your cost is: " + totalCost);
+		break;
+		
+		
+		default: 
+			alert("Inavlid service, plaese re-enter." );
+			
+		if (totalCost > budget)
+		{
+			alert("You have gone over your budget...");
+			break;
+		}
+		
+		if (service = "done")
+			break;
+	
+	}
+	
+	totalCost = totalCost + cost;
+	
+	}
+}
+
+</script>
+</head>
+<body>
+<div id="container">
+
+ <img src="./Lee&apos;s Landscapes_files/lee_landscape.jpg" class="floatleft" />
+ <h1 id="logo"><em>Lee's Landscapes | Services</em></h1>
+  
+ <blockquote>
+       <h3 align="center"> Beautifying our world, one step at a time</h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_aboutuser.html">About Lee</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_signup.html">Signup</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_service.html">Lee's Services</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_payroll.html">Lee's Payroll</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tools.html">Gardening tools</a>
+   <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tips.html">Tips &amp; tricks</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/contact.html">Contact us</a>
+</div>
+<div id="content">
+<p>Services available </p>
+<table width="90%"  border="0" cellpadding="5">
+  <tr>
+    <td width="10%">&nbsp;Lawn Maintenance</td>
+    <td width="10%">&nbsp;Weekly: $15/service <br>Twice a Month: $25/service <br>Monthly: $40/service</td>
+	<td> <img src = "./Lee&apos;s Landscapes_files/lawnMower.jpg" /> </td>
+  </tr>
+  <tr>
+    <td width="50%">&nbsp;Pest Control</td>
+    <td width="50%">&nbsp;Monthly: $35/service <br>Twice a Year: $75/service <br>Yearly: $150/service</td>
+	<td> <img src = "./Lee&apos;s Landscapes_files/pestControl.jpg" /> </td>
+  </tr>
+  <tr>
+    <td>&nbsp;Tree & Hedge Trimming</td>
+    <td>&nbsp;Monthly: $25/service <br>Twice a Year: $75/service <br>Yearly: $150/service</td>
+	<td> <img src = "./Lee&apos;s Landscapes_files/hedgeTrimming.jpg" /> </td>
+  </tr>
+</table>
+
+<p><button type="button" onclick="getService()">Enter the service you want:</button>
+		<span id ="myserice" ></span></p>
+		<p>&nbsp;</p>
+		
+<p><button type="button" onclick="getOrder()">Click here to start your order:</button>
+		<span id ="myorder" ></span></p>
+		<p>&nbsp;</p>
+		
+
+</div>
+<div id="footer">Copyright © 2016 Lee's Landscapes<br />
+<a href="mailto:Campbell@Lang.com" class="style2">Campbell@Lang.com</a></div>
+</div>
+</body>
+</html>

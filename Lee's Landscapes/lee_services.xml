@@ -1,0 +1,59 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<?xml-stylesheet type = "text/css" href = "lee_services.css"?>
+<?xml-stylesheet type = "text/xsl" href = "lee_services.xsl"?>
+
+<lee>
+
+<head> Lee's Landscape || Service Offering's </head>
+<tag> Beautifying the world, one landscape at a time </tag>
+
+	<landscape xmlns:lawnMonthly = "http://lee.com/lawnMonthly">
+		<service> Lawn maintenance </service>
+		<frequency> monthly </frequency>
+		<cost> $80 </cost>
+	</landscape>
+	<landscape xmlns:lawnWeekly = "http://lee.com/lawnWeekly">
+		<service> Lawn maintenance </service>
+		<frequency> weekly </frequency>
+		<cost> $20 for 4 weeks </cost>
+	</landscape>
+	<landscape xmlns:lawnService = "http://lee.com/lawnService">
+		<service> Lawn maintenance </service>
+		<frequency> as called </frequency>
+		<cost> $20 per service </cost>
+	</landscape>
+
+	<landscape xmlns:treeYearly = "http://lee.com/treeYearly">
+		<service> Tree pruning </service>
+		<frequency> yearly </frequency>
+		<cost> $150 </cost>
+	</landscape>
+	<landscape xmlns:treeVisit = "http://lee.com/treeVisit">
+		<service> Tree pruning </service>
+		<frequency> twice a year </frequency>
+		<cost> $200 for 2 visits </cost>
+	</landscape>
+	<landscape xmlns:treeService = "http://lee.com/treeService">
+		<service> Tree pruning </service>
+		<frequency> as called </frequency>
+		<cost> $200 per service </cost>
+	</landscape>
+	
+	<landscape xmlns:pestMonthly = "http://lee.com/pestMonthly">
+		<service> Pest control </service>
+		<frequency> monthly </frequency>
+		<cost> $50.00 </cost>
+	</landscape>
+	<landscape xmlns:pestYearly = "http://lee.com/pestYearly">
+		<service> Pest Control
+		<frequency> twice a year </frequency>
+		<cost> $200 per visit </cost>
+	</landscape>
+	<landscape xmlns:pestService = "http://lee.com/pestService">
+		<service> Pest control </service>
+		<frequency> as called </frequency>
+		<cost> $250 per service </cost>
+	</landscape>
+	
+</lee>
+

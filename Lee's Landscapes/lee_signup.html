@@ -1,0 +1,105 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Lee's Landscapes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="./Lee&apos;s Landscapes_files/lee.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style2 {color: #004000}
+.style4 {font-size: 10}
+-->
+</style>
+<script>
+function getName()
+{
+	var name = prompt("Please enter your name"," ");
+	document.getElementById('myname').innerHTML = name;
+}
+
+function getAdress()
+{
+	var adress = prompt("Please enter your adress"," ");
+	document.getElementById('myadress').innerHTML = adress;
+}
+
+function getCity()
+{
+	var city = " ";
+	var state = " ";
+	var zipCode = " ";
+	
+	city = prompt("Please enter your city", " ");
+	state = prompt("Please enter your state", " ");
+	zipCode = prompt("Please enter your zip code", " ");
+	document.getElementById('mycity').innerHTML = (city + ", " + state + ", " + zipCode);
+}
+
+function getPhone()
+{
+	var phoneNumber = prompt("Please enter your phone number", " ");
+	document.getElementById('yournumber').innerHTML = phoneNumber;
+}
+
+function getAlternatePhone()
+{
+	var alternateNumber = prompt("Please enter an alternate phone number", " ");
+	document.getElementById('anothernumber').innerHTML = alternateNumber;
+}
+
+function getEmail()
+{
+	var email = " ";
+	var emailCheck = " ";
+	
+	email = prompt("Please enter your email adress", " ");
+	emailCheck = prompt("Please re-enter your email adress", " ");
+	document.getElementById('youremail').innerHTML = email;
+	
+	if (email != emailCheck)
+	{
+		var incorrect = prompt("Please re-enter your email adress", " ");
+		document.getElementById('secondchance').innerHTML = incorrect;
+	}
+}
+</script>
+</head>
+<body>
+<div id="container">
+
+ <img src="./Lee&apos;s Landscapes_files/lee_landscape.jpg" class="floatleft" />
+ <h1 id="logo"><em>Lee's Landscapes || Signup</em></h1>
+  
+ <blockquote>
+       <h3 align="center"> Beautifying our world, one step at a time</h3>
+  </blockquote>
+ <p> </p>
+<div id="nav">
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/index.html">Home</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_aboutuser.html">About Lee</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_signup.html">Signup</a>
+  <a href="file:///C:/Users/soupl/Desktop/Lee's%20Landscapes/lee_service.html">Lee's Services</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tools.html">Gardening tools</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/tips.html">Tips &amp; tricks</a>
+  <a href="https://ilearn.marist.edu/access/content/group/32762295-1a93-4233-b720-0066e2c83a03/Student%20Data%20Files/Lee/contact.html">Contact us</a>
+</div>
+<div><form name="inventory"<fieldset>
+
+
+<div><table width="100%" border = "2"><br/>
+   <tr><td colspan =  "5" class = "nobdr"><h3>What year are you?</h3></td></tr>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Freshman" value="Freshman" onclick="pickAvatar('Freshman')"/>Freshman</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Sophomore" value="Sophomore" onclick="pickAvatar('Sophomore')"/>Sophomore</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Junior" value="Junior" onclick="pickAvatar('Junior')"/>Junior</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Senior" value="Senior" onclick="pickAvatar('Senior')"/>Senior</td>
+    </table>
+	
+	
+<div> <br /><input type = "reset" value = "ooops!  made a mistake. Let me start over."><br/></div></form>
+</div>
+<div id="footer">Copyright © 2016 Lee's Landscapes<br />
+<a href="mailto:Campbell@Lang.com" class="style2">Campbell@Lang.com</a></div>
+</div>
+</body>
+</html>
