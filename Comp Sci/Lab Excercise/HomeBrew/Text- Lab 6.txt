@@ -1,0 +1,39 @@
+1. what year are you?
+*radio buttons*
+-freshman
+-sophomore
+-junior
+-senior
+
+2. which meals do you eat in the dining hall?
+*check boxes*
+-Breakfast 
+-Lunch
+-Dinner
+*'ok' button*
+
+3. what is your favorite food?
+*text box/write in*
+-20 character limit  *'ok' buton*
+
+4. what station do you visit most frequently?
+*drop down list?
+-pasta
+-salad bar
+-sandwich
+-main entree
+*'ok' button*
+
+*RESET button*
+
+
+function getYear(year);
+*similar to getAvatar()
+
+function getMeal();
+*similar to getWeapon()
+
+function getFood();
+*similar to get userName()
+
+function getStation();

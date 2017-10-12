@@ -1,0 +1,5 @@
+comp_sum= dice1 + dice2				user_sum= userDice1 + userDice2
+|									|
+|									|
+|									|
+comp_total + comp_dice				user_total + user_dice

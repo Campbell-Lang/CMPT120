@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Marist Dining Hall | Survey </title>
+<link href="greg.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+//JavaScript functions go here
+function pickAvatar(picked){
+   var avatar = document.getElementById(picked).value;
+   document.getElementById('myavatar').innerHTML = avatar;
+   };
+ //end pickAvatar
+ function getRealName(realname){
+   var real = document.getElementById(realname).value;
+   document.getElementById('real_name').innerHTML = real;
+ }//end getRealName
+ 
+  function getStation(station){
+   var real = document.getElementById(station).value;
+   document.getElementById('my_station').innerHTML = real;
+ }//end getStation
+ 
+ function pickMeal(){
+ var i = 0; var j = 0; var k = 0;
+ var breakfast = ""; var lunch = ""; var dinner = "";
+  for ( i= 0; i <= 9; i++){
+    if (document.getElementById('w'+i).checked == true){
+	    breakfast = document.getElementById('w'+i).value;
+		document.getElementById('breakfast1').innerHTML = breakfast;
+		break;
+	}//endif
+  }//end for loop
+  for ( j=(i+1) ; j <= 9; j++){
+    if (document.getElementById('w'+j).checked == true){
+	    lunch = document.getElementById('w'+j).value;
+		document.getElementById('lunch1').innerHTML = lunch;
+		break;
+	}//endif
+  }//end for loop
+  for ( k= (j+1); k <= 9; k++){
+    if (document.getElementById('w'+k).checked == true){
+	    dinner = document.getElementById('w'+k).value;
+		document.getElementById('dinner1').innerHTML = dinner;
+		break;
+	}//endif
+  }//end for loop
+ }//pickMeal
+</script>
+</head>
+<body>
+<div id="container">
+<h1 align="center"><em> Dining Hall Survey</em></h1>
+<div style="clear:both;"></div>
+<div id="content">
+<h2><br />Tell Marist about you</h2>
+<div><form name="inventory"<fieldset>
+  <h3>Enter the following information:</h3>
+   
+   <div><table width="100%" border = "2"><br/>
+   <tr><td colspan =  "5" class = "nobdr"><h3>What year are you?</h3></td></tr>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Freshman" value="Freshman" onclick="pickAvatar('Freshman')"/>Freshman</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Sophomore" value="Sophomore" onclick="pickAvatar('Sophomore')"/>Sophomore</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Junior" value="Junior" onclick="pickAvatar('Junior')"/>Junior</td>
+   <td class = "nobdr"><input type = "radio" name = "year" id="Senior" value="Senior" onclick="pickAvatar('Senior')"/>Senior</td>
+    </table>
+<div style="width: 50%; float: left;"><fieldset>
+    <h3>Which meals do you eat in the dining hall?</h3>
+	<input type="checkbox" name="weapons" id="w0" value = "Breakfast" />Breakfast<br/>
+    <input type="checkbox" name="weapons" id="w1" value = "Lunch" />Lunch<br/>
+	<input type="checkbox" name="weapons" id="w2" value = "Dinner" />Dinner<br/>
+	<input type="button" onClick="pickMeal()" value = "Enter my selections" />
+</fieldset></div>
+
+<p><label>What is your favorite meal?<br /><label>
+   <input type="text" id="realname" size="20" value=""/>
+   <input type="button" onclick="getRealName('realname')" value=ok></button></p>
+   </fieldset></div><div style="clear:both;"></div>
+   
+ <table align = "right" width = "60%">
+<tr><td></td>
+</tr>
+	<tr><td>
+	 <h3>What is your favorite station?</h3>
+	  <select name="station" size = "5" id="station">
+		<option value = "pasta">pasta</option>
+		<option value = "salad-bar">salad-bar</option>
+		<option value = "sandwich">sandwich</option>
+		<option value = "main entree">main entree</option>
+		<input type="button" onclick="getStation('station')" value=ok></button></p>
+	</select>
+	</td></tr>
+ </table>
+   
+<div> <br /><input type = "reset" value = "ooops!  made a mistake. Let me start over."><br/></div></form>
+ <div style="width: 90%; float: left;">
+ <h3>Your Information<br />
+ <br></br>
+ Your Year:<span id= "myavatar">&nbsp;</span><span id= "avatar_img">&nbsp;</span><br /><br />
+ Your Favorite meal:<span id= "real_name">&nbsp;</span><br /><br />
+  Your Favorite station:<span id= "station">&nbsp;</span><br /><br />
+Meals in the dining hall:<br />
+<span id= "breakfast1">&nbsp;</span><br /><br />
+<span id= "lunch1">&nbsp;</span><br /><br />
+<span id= "dinner1">&nbsp;</span><br /><br />
+</div><div style="clear:both;"></div>
+ <div id="footer">Copyright &copy; 2016<br />
+<a href="mailto:campbell.lang">campbell.lang</a></div>
+</div></body/></html>
